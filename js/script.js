@@ -36,9 +36,15 @@ createApp({
     methods: {
         prevImage(){
             this.activeImage--
+            if (this.activeImage < 0 ) {
+                this.activeImage = this.item.image.length -1
+            }
         },
         nextImage(){
             this.activeImage++
+            if (this.activeImage > this.item.image.length -1) {
+                this.activeImage = 0
+            }
         },
 
     },

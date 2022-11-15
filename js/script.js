@@ -6,6 +6,8 @@ createApp({
     data() {
       return {
         activeImage: 0,
+        active: true,
+        inactive: false,
         slides: [
             {
                     image: 'img/01.webp',
